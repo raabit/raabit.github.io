@@ -1,265 +1,125 @@
-Revise my current portfolio website design and content.
+Refine the case study landing/hero section responsiveness.
+
+Problem:
+On a 15.6-inch laptop screen, the Safeway case study hero is too large vertically. The heading, top spacing, and metadata cards take up too much space, so the content feels zoomed-in and oversized. On a larger monitor or zoomed-out view, it looks much more balanced.
+
+Goal:
+Make the case study hero adapt better to laptop screens like 1366x768, 1440x900, and 1536x864. The laptop version should look closer to the balanced second screenshot, where the title, subtitle, and metadata cards are visible more comfortably.
 
 Important:
-The current version looks good, but it feels too similar to another student portfolio. I want a different visual identity, different wording, and a more general professional portfolio tone. It should not feel like the site was made only for a Human-Centered Computing course. The HCC/Safeway case study should appear as one featured UX case study inside my regular portfolio.
+- Do not redesign the whole case study page.
+- Do not change the warm editorial color palette.
+- Do not change the text content.
+- Do not change the section order.
+- Only improve hero sizing, spacing, and responsive behavior.
 
-Use only HTML, CSS, and vanilla JavaScript. No frameworks.
+Tasks:
 
-Main goal:
-Create a polished personal portfolio for a software developer with UX / human-centered design experience.
+1. Reduce excessive top spacing
+The top area between the navbar and the “Back to Portfolio” link is too tall on laptop screens.
+Reduce the vertical spacing on medium/laptop viewport heights.
 
-New visual direction:
-Use an elegant warm editorial color scheme instead of dark navy/cyan/purple.
+Use viewport-aware CSS such as:
+@media (max-height: 850px)
+@media (max-width: 1536px)
+@media (max-width: 1440px)
 
-Color palette:
-- Background: #F8F4EC or #FAF7F0
-- Main text: #1E2522
-- Secondary text: #5F6F67
-- Primary accent: #1F6F5B
-- Secondary accent: #C76F45
-- Card background: #FFFFFF
-- Soft section background: #EFE7D8
-- Border: #D8CFC0
-- Button hover: #174F42
+2. Scale the case study title more intelligently
+The title “Safeway Grocery Experience Redesign” is too large on laptop screens.
 
-Design style:
-- Warm, clean, professional, modern
-- More like a developer/UX portfolio, not a course submission page
-- Use large whitespace, soft rounded cards, subtle shadows
-- Use a split hero layout, but not the same exact look as the previous dark version
-- Avoid glowing neon effects
-- Avoid cyan/purple code-style styling
-- Avoid the exact same spacing, button style, and hero card structure from the previous version
-- Use elegant section labels, large headings, and calm visual hierarchy
-- Fully responsive for desktop, tablet, and mobile
-- Accessible contrast
-- Smooth scrolling
-- Hover effects on cards/buttons
-- Mobile menu toggle if needed
+Use clamp() for the case study title font size.
+The title should remain bold and impressive on large screens, but slightly smaller on laptop screens.
 
-Update the site identity:
-Do not brand the whole site as “Human-Centered Computing Portfolio.”
-Instead, make it my regular portfolio.
+Suggested direction:
+- large desktop: keep strong oversized heading
+- laptop: reduce title size enough so it does not dominate the whole first viewport
+- mobile: stack naturally and stay readable
 
-Use this general positioning:
-Name: [Your Name]
-Main title: Software Developer & UX-Focused Problem Solver
-Subtitle:
-I build practical web experiences and evaluate digital products through usability, accessibility, and human-centered design principles.
+3. Tighten title line-height and spacing
+Adjust:
+- line-height of the case study title
+- margin below the title
+- spacing between label, title, subtitle, and metadata grid
 
-Navigation:
-- Home
-- About
-- Work
-- Case Study
-- Skills
-- Contact
+The title should still feel premium, but not oversized.
 
-Hero section:
-Replace the current wording with:
+4. Improve metadata card layout
+The metadata cards should appear earlier and more compactly on laptop screens.
 
-Small label:
-PORTFOLIO
+Adjust:
+- card padding
+- grid gap
+- vertical spacing above metadata grid
+- card height if needed
 
-Main heading:
-Hi, I’m [Your Name] — a software developer who cares about usable, accessible design.
+Do not make them cramped. Just reduce unnecessary empty space.
 
-Paragraph:
-I work across web development, interface evaluation, and human-centered problem solving. My portfolio brings together technical projects, UX case studies, and design reflections from academic and real-world work.
+5. Reduce case study hero section height
+The case study hero should not require excessive scrolling before the user sees the metadata cards.
 
-Buttons:
-- View My Work
-- View Safeway Case Study
-- Resume
+On laptop screens, the following should be comfortably visible within the first viewport:
+- navbar
+- Back to Portfolio link
+- UX Case Study label
+- title
+- subtitle
+- at least the first few metadata cards
 
-Hero visual:
-Use a clean profile card with headshot placeholder, but make it rectangular or organic rounded shape instead of copying the circular dark card style. Include small chips:
-- Web Development
-- UX Evaluation
-- Accessibility
-- Interaction Design
+6. Keep large desktop appearance polished
+Do not make the large monitor version worse.
+Preserve the elegant large-screen style, but make the laptop version more compact.
 
-About section:
-Heading:
-Building software with people in mind.
+7. Use clean CSS
+Update only the CSS related to the case study hero/intro section.
 
-Text:
-My work combines technical implementation with a human-centered approach. I enjoy creating web applications, studying how users interact with interfaces, and improving digital experiences through clearer structure, better feedback, and accessible design choices.
+Possible classes to adjust:
+- .case-hero
+- .case-hero-inner
+- .case-eyebrow
+- .case-title
+- .case-subtitle
+- .case-meta-grid
+- .case-meta-card
+- .back-link
 
-Info cards:
-- Degree Program: [Your Degree Program]
-- Expected Graduation: [Graduation Year]
-- Focus Areas: Web Development, UX Evaluation, Human-Centered Design
-- Location: [Your Location or leave placeholder]
+8. Add height-based responsiveness
+This issue is caused by available vertical screen space, not only screen width.
+Add media queries for shorter viewports.
 
-Professional Materials section:
-Rename it to:
-Profile & Professional Materials
+Example direction:
+When viewport height is below 850px:
+- reduce hero top padding
+- reduce title font size slightly
+- reduce title margin
+- reduce metadata card padding
+- reduce gaps
 
-Cards:
-1. Resume / CV
-Description:
-A concise overview of my education, technical skills, projects, and professional experience.
-Button: View Resume
+When viewport height is below 760px:
+- compact the hero further
+- ensure it still looks intentional, not squeezed
 
-2. LinkedIn
-Description:
-My professional profile with academic background, experience, and selected work.
-Button: Visit LinkedIn
+9. Preserve desktop and mobile behavior
+After updating, check:
+- 1920x1080
+- 1536x864
+- 1440x900
+- 1366x768
+- tablet
+- mobile
 
-3. About Me
-Description:
-A quick introduction to my background, interests, degree program, and design/development focus.
-Button: Read More
+Expected result:
+The case study landing should look like the second screenshot on laptop screens: balanced, compact, polished, and easier to scan without feeling zoomed-in.
 
-Work / Projects section:
-Create a section called:
-Selected Work
-
-Add at least 3 cards:
-1. Safeway Grocery Experience Redesign
-Description:
-A UX case study exploring how grocery shopping can shift from category-based browsing to meal-based planning.
-Tags:
-UX Evaluation, Conceptual Model, Mental Model, Figma
-Button:
-Open Case Study
-
-2. Web Development Projects
-Description:
-Selected projects focused on building usable, responsive, and maintainable web applications.
-Tags:
-HTML, CSS, JavaScript, React/Next.js
-
-3. Interaction Design Analysis
-Description:
-Course-based evaluations of real interfaces using visibility, feedback, constraints, consistency, affordances, and mapping.
-Tags:
-HCI, Usability, Accessibility
-
-Featured Case Study preview:
-This should connect to case-study-safeway.html.
-
-Title:
-Safeway.com UX Case Study
-
-Subtitle:
-Redesigning grocery shopping around meal planning instead of only product categories.
-
-Body:
-This case study evaluates the current Safeway grocery experience and proposes a more human-centered model. The redesign focuses on how users naturally plan meals, organize ingredients, and build grocery lists.
-
-Button:
-Read Full Case Study
-
-Skills section:
-Rename:
-Skills & Methods
-
-Group skills into categories instead of one long chip list.
-
-Category 1: Development
-- HTML
-- CSS
-- JavaScript
-- React / Next.js
-- Responsive Design
-
-Category 2: UX & HCI
-- Heuristic Evaluation
-- Interaction Design
-- Conceptual Modeling
-- Mental Models
-- Gulf of Execution Analysis
-
-Category 3: Design & Research
-- Wireframing
-- Figma
-- Accessibility Review
-- Information Architecture
-- Visual Design
-
-Contact section:
-Heading:
-Let’s connect.
-
-Text:
-I’m open to discussing projects, collaborations, internships, and design or development opportunities.
-
-Cards:
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn]
-- GitHub / Portfolio: [Your Link]
-
-Footer:
-[Your Name] — Software Developer & UX-Focused Portfolio — 2026
+Do not modify other sections of the case study page.
 
 
-Case study page update:
-Keep the Safeway case study page, but make it match the new warm editorial theme.
+Suggested CSS behavior:
+- case study title: font-size: clamp(4rem, 7vw, 8.5rem);
+- for max-height: 850px, reduce title to clamp(3.5rem, 6vw, 6.5rem)
+- for max-height: 760px, reduce title to clamp(3rem, 5.5vw, 5.5rem)
+- reduce case hero padding-top and padding-bottom on shorter screens
+- reduce metadata card padding from large desktop values to around 1.5rem on laptop screens
+- keep the page max-width centered and consistent with the rest of the site
 
-Page title:
-Safeway Grocery Experience Redesign
 
-Subtitle:
-A human-centered case study on conceptual models, mental models, interface metaphors, and the gulf of execution.
-
-Tone:
-The case study can mention HCC 629, but it should not make the whole website feel like only a course assignment.
-
-Metadata cards:
-- Role: UX Evaluator / Interaction Designer
-- Project Type: Academic UX Case Study
-- Website Studied: Safeway.com
-- Focus: Grocery Shopping, Meal Planning, Interaction Design
-- Tools: Figma, Interface Analysis, Wireframing
-- Course: HCC 629: Fundamentals of Human-Centered Computing
-
-Project overview:
-Safeway’s current website mainly organizes shopping around grocery categories such as produce, meat, bakery, and deals. This case study explores an alternative model where users begin with what they want to cook, then move toward recipes, ingredients, and cart building.
-
-Problem statement:
-How might Safeway support users who think in terms of meals and weekly planning, rather than asking them to begin only with product categories?
-
-Case study sections:
-1. Context
-2. Current Experience
-3. User Mental Model
-4. Redesign Direction
-5. Interface Metaphors
-6. Design Principles Applied
-7. Gulf of Execution
-8. Outcome
-9. Reflection
-
-Keep these principle cards:
-- Visibility
-- Constraints
-- Feedback
-- Consistency
-- Signifiers / Affordances
-- Mapping
-- Accessibility / Universal Design
-
-Use before/after image placeholders:
-- assets/safeway-current-homepage.png
-- assets/safeway-meal-planner.png
-- assets/recipe-card-board.png
-- assets/virtual-fridge.png
-- assets/grocery-list-notepad.png
-- assets/coupon-current.png
-- assets/coupon-redesign.png
-
-Add comments in the HTML wherever I need to replace:
-- name
-- degree program
-- graduation year
-- resume link
-- LinkedIn link
-- email
-- headshot
-- project images
-- Figma link
-
-Final requirement:
-The final design should feel meaningfully different from the previous dark navy/cyan portfolio. It should feel warm, professional, personal, and suitable as my real portfolio while still satisfying the Human-Centered Computing assignment requirements.
+Apply the same responsive philosophy used for the homepage hero to the case study hero, but tune it for the case study layout.
