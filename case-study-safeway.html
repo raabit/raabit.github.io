@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safeway Grocery Experience Redesign | UX Case Study</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Case study navigation">
+      <a class="brand" href="index.html">Raabit Hassan</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="visually-hidden">Open navigation</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="#overview">Overview</a></li>
+        <li><a class="nav-link" href="#context">Context</a></li>
+        <li><a class="nav-link" href="#metaphors">Metaphors</a></li>
+        <li><a class="nav-link" href="#principles">Principles</a></li>
+        <li><a class="nav-link" href="#outcome">Outcome</a></li>
+        <li><a class="nav-link" href="index.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="case-hero section" id="overview" aria-labelledby="case-title">
+      <div class="container">
+        <a class="back-link reveal" href="index.html">Back to Portfolio</a>
+        <div class="case-intro reveal">
+          <p class="section-label">UX Case Study</p>
+          <h1 id="case-title">Safeway Grocery Experience Redesign</h1>
+          <p class="hero-text">
+            A human-centered case study on conceptual models, mental models, interface metaphors, and the gulf of execution.
+          </p>
+        </div>
+        <div class="metadata-grid">
+          <article class="mini-card reveal"><span>Role</span><strong>UX Evaluator / Interaction Designer</strong></article>
+          <article class="mini-card reveal"><span>Project Type</span><strong>Academic UX Case Study</strong></article>
+          <article class="mini-card reveal"><span>Website Studied</span><strong>Safeway.com</strong></article>
+          <article class="mini-card reveal"><span>Focus</span><strong>Grocery Shopping, Meal Planning, Interaction Design</strong></article>
+          <article class="mini-card reveal"><span>Tools</span><strong>Interface Analysis, Wireframing</strong></article>
+          <article class="mini-card reveal"><span>Course</span><strong>Fundamentals of Human Centered Computing</strong></article>
+          <article class="mini-card reveal"><span>Team Member</span><strong>Sudipta Mondal</strong></article>
+          <article class="mini-card reveal"><span>Professor</span><strong>Dr. Tera Reynolds</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="context" aria-labelledby="context-title">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="section-label">1. Context</p>
+          <h2 id="context-title">A grocery website is also a planning tool.</h2>
+        </div>
+        <div class="stack reveal">
+          <article class="card">
+            <h3>Project Overview</h3>
+            <p>Safeway's current website mainly organizes shopping around grocery categories such as produce, meat, bakery, and deals. This case study explores an alternative model where users begin with what they want to cook, then move toward recipes, ingredients, and cart building.</p>
+          </article>
+          <article class="card">
+            <h3>Problem Statement</h3>
+            <p>How might Safeway support users who think in terms of meals and weekly planning, rather than asking them to begin only with product categories?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="current-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">2. Current Experience</p>
+          <h2 id="current-title">The current model begins with product categories.</h2>
+          <p>The existing experience asks users to navigate grocery aisles digitally. That structure can work for known-item shopping, but it is less direct for people planning meals, comparing recipes, or building a weekly list.</p>
+        </div>
+        <figure class="image-card reveal">
+          <!-- Replace assets/safeway-current-homepage.png with the original Safeway homepage screenshot. -->
+          <img src="assets/safeway-current-homepage.png" alt="Placeholder for current Safeway homepage" class="lightbox-image">
+          <figcaption>Before: current Safeway category-oriented homepage.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section soft-section" aria-labelledby="mental-title">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="section-label">3. User Mental Model</p>
+          <h2 id="mental-title">Many shoppers start with meals, not aisles.</h2>
+        </div>
+        <div class="reveal">
+          <p class="lead">A shopper may think, "I am making pasta tonight," or "I need lunches for the week." The redesign uses that planning mindset as the starting point, then connects recipes to ingredients and cart actions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="direction-title">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="section-label">4. Redesign Direction</p>
+          <h2 id="direction-title">From category browsing to meal planning.</h2>
+          <p>The flow shifts from category -> subcategory -> product to intent -> recipe -> ingredients -> cart.</p>
+        </div>
+        <figure class="image-card reveal">
+          <!-- Replace assets/safeway-meal-planner.png with the meal planner redesign mockup. -->
+          <img src="assets/safeway-meal-planner.png" alt="Placeholder for meal planning redesign mockup" class="lightbox-image">
+          <figcaption>After: meal-intent planner concept.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="metaphors" aria-labelledby="metaphors-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">5. Interface Metaphors</p>
+          <h2 id="metaphors-title">Using familiar planning objects to make actions clearer.</h2>
+        </div>
+        <div class="card-grid three-col">
+          <article class="media-card reveal">
+            <!-- Replace assets/recipe-card-board.png with your recipe card board image. -->
+            <img src="assets/recipe-card-board.png" alt="Recipe card board mockup placeholder" class="lightbox-image">
+            <div><h3>Recipe Card Board</h3><p>Recipe cards make browsing meals feel familiar because users already understand them from cooking and meal planning.</p></div>
+          </article>
+          <article class="media-card reveal">
+            <!-- Replace assets/virtual-fridge.png with your virtual refrigerator image. -->
+            <img src="assets/virtual-fridge.png" alt="Virtual refrigerator mockup placeholder" class="lightbox-image">
+            <div><h3>Refrigerator Door</h3><p>A virtual fridge organizes ingredients in a way that resembles how people already picture food storage at home.</p></div>
+          </article>
+          <article class="media-card reveal">
+            <!-- Replace assets/grocery-list-notepad.png with your grocery list image. -->
+            <img src="assets/grocery-list-notepad.png" alt="Grocery list notepad mockup placeholder" class="lightbox-image">
+            <div><h3>Grocery List Notepad</h3><p>A notepad with checkboxes maps to how people traditionally prepare shopping lists before going to the store.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">6. Design Principles Applied</p>
+          <h2 id="principles-title">Principles translated into redesign choices.</h2>
+        </div>
+        <div class="card-grid principles-grid">
+          <article class="principle-card reveal"><h3>Visibility</h3><p><strong>Issue:</strong> Important shopping paths and filters may not be immediately visible when hidden in dropdowns or category menus.</p><p><strong>Redesign:</strong> Make meal-planning actions, recipe categories, and shopping-list controls visible on the main page.</p></article>
+          <article class="principle-card reveal"><h3>Constraints</h3><p><strong>Issue:</strong> Users may face too many choices at once when browsing broad grocery categories.</p><p><strong>Redesign:</strong> Guide users through a step-by-step flow: meal occasion -> recipe -> ingredients -> cart.</p></article>
+          <article class="principle-card reveal"><h3>Feedback</h3><p><strong>Issue:</strong> Users need confirmation when recipes, ingredients, or coupons are added.</p><p><strong>Redesign:</strong> Add clear feedback states such as "Added to list," checked items, loading states, and confirmation messages.</p></article>
+          <article class="principle-card reveal"><h3>Consistency</h3><p><strong>Issue:</strong> Navigation patterns can become confusing if categories, recipes, deals, and cart actions behave differently.</p><p><strong>Redesign:</strong> Use consistent cards, buttons, labels, icons, and spacing across meal planning, recipe browsing, and cart sections.</p></article>
+          <article class="principle-card reveal"><h3>Signifiers / Affordances</h3><p><strong>Issue:</strong> Users may not immediately understand which elements are clickable or interactive.</p><p><strong>Redesign:</strong> Use visible buttons, hover states, checkbox controls, tabs, and card labels to clearly communicate possible actions.</p></article>
+          <article class="principle-card reveal"><h3>Mapping</h3><p><strong>Issue:</strong> The connection between meal choices, ingredients, and the shopping cart may not be obvious.</p><p><strong>Redesign:</strong> Place controls close to the content they affect. Recipe cards should directly connect to ingredient lists and cart actions.</p></article>
+          <article class="principle-card reveal"><h3>Accessibility / Universal Design</h3><p><strong>Issue:</strong> Users with different abilities may struggle if text is small, contrast is weak, or navigation is not keyboard-friendly.</p><p><strong>Redesign:</strong> Use readable text, strong contrast, alt text for images, keyboard-accessible controls, and responsive layouts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" aria-labelledby="gulf-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">7. Gulf of Execution</p>
+          <h2 id="gulf-title">Making the next action easier to see.</h2>
+          <p>A gulf of execution occurs when users struggle to determine what action to take next. In the coupon section, category filters placed in dropdowns can make filtering less visible and harder to use.</p>
+        </div>
+        <div class="card-grid two-col">
+          <figure class="image-card reveal">
+            <!-- Replace assets/coupon-current.png with the current coupon flow screenshot. -->
+            <img src="assets/coupon-current.png" alt="Current coupon filtering interface placeholder" class="lightbox-image">
+            <figcaption>Before: coupon categories are less visible.</figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <!-- Replace assets/coupon-redesign.png with the redesigned coupon flow mockup. -->
+            <img src="assets/coupon-redesign.png" alt="Redesigned coupon filtering interface placeholder" class="lightbox-image">
+            <figcaption>After: categories move into a scannable side menu.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="outcome" aria-labelledby="outcome-title">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="section-label">8. Outcome</p>
+          <h2 id="outcome-title">A clearer bridge between planning and shopping.</h2>
+        </div>
+        <div class="stack reveal">
+          <p class="lead">The redesigned Safeway experience creates a clearer connection between user goals and interface actions. Instead of forcing users to begin with grocery categories, the new flow supports meal planning, recipe discovery, ingredient selection, and cart building in a more natural sequence.</p>
+          <article class="card">
+            <p class="section-label">9. Reflection</p>
+            <h3>What this case study clarified</h3>
+            <p>This case study helped me understand how conceptual models, mental models, metaphors, and gulfs affect interaction design. A grocery website is not only a product catalog; it is part of a user's real-life planning process. Designing around meals instead of only categories can reduce confusion, improve visibility, and make the shopping experience feel more human-centered.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-actions">
+      <a class="button secondary-button" href="index.html">Back to Portfolio</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

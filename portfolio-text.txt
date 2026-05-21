@@ -1,0 +1,16 @@
+Name: Raabit Hassan
+Degree Program: MPS in Software Engineering
+Expected Graduation: December, 2026
+Email: raabithassan@gmail.com
+LinkedIn: https://www.linkedin.com/in/raabithassan/
+GitHub: https://github.com/raabhass
+Resume File Name: Resume_Raabit_Hassan.pdf
+Headshot File Name: headshot.jpg
+Short Bio: [generate a short bio of a software engineer]
+Long Bio: [generate a long bio of a software engineer]
+Skills: PHP, Laravel, JavaScript, Django, React
+Projects: [add projects from the resume]
+Safeway Case Study Team Members: Sudipta Mondal
+Course Name: Fundamentals of Human Centered Computing
+Professor: Dr. Tera Reynolds
+Figma Link: [Remove this]

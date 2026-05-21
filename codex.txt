@@ -1,0 +1,265 @@
+Revise my current portfolio website design and content.
+
+Important:
+The current version looks good, but it feels too similar to another student portfolio. I want a different visual identity, different wording, and a more general professional portfolio tone. It should not feel like the site was made only for a Human-Centered Computing course. The HCC/Safeway case study should appear as one featured UX case study inside my regular portfolio.
+
+Use only HTML, CSS, and vanilla JavaScript. No frameworks.
+
+Main goal:
+Create a polished personal portfolio for a software developer with UX / human-centered design experience.
+
+New visual direction:
+Use an elegant warm editorial color scheme instead of dark navy/cyan/purple.
+
+Color palette:
+- Background: #F8F4EC or #FAF7F0
+- Main text: #1E2522
+- Secondary text: #5F6F67
+- Primary accent: #1F6F5B
+- Secondary accent: #C76F45
+- Card background: #FFFFFF
+- Soft section background: #EFE7D8
+- Border: #D8CFC0
+- Button hover: #174F42
+
+Design style:
+- Warm, clean, professional, modern
+- More like a developer/UX portfolio, not a course submission page
+- Use large whitespace, soft rounded cards, subtle shadows
+- Use a split hero layout, but not the same exact look as the previous dark version
+- Avoid glowing neon effects
+- Avoid cyan/purple code-style styling
+- Avoid the exact same spacing, button style, and hero card structure from the previous version
+- Use elegant section labels, large headings, and calm visual hierarchy
+- Fully responsive for desktop, tablet, and mobile
+- Accessible contrast
+- Smooth scrolling
+- Hover effects on cards/buttons
+- Mobile menu toggle if needed
+
+Update the site identity:
+Do not brand the whole site as “Human-Centered Computing Portfolio.”
+Instead, make it my regular portfolio.
+
+Use this general positioning:
+Name: [Your Name]
+Main title: Software Developer & UX-Focused Problem Solver
+Subtitle:
+I build practical web experiences and evaluate digital products through usability, accessibility, and human-centered design principles.
+
+Navigation:
+- Home
+- About
+- Work
+- Case Study
+- Skills
+- Contact
+
+Hero section:
+Replace the current wording with:
+
+Small label:
+PORTFOLIO
+
+Main heading:
+Hi, I’m [Your Name] — a software developer who cares about usable, accessible design.
+
+Paragraph:
+I work across web development, interface evaluation, and human-centered problem solving. My portfolio brings together technical projects, UX case studies, and design reflections from academic and real-world work.
+
+Buttons:
+- View My Work
+- View Safeway Case Study
+- Resume
+
+Hero visual:
+Use a clean profile card with headshot placeholder, but make it rectangular or organic rounded shape instead of copying the circular dark card style. Include small chips:
+- Web Development
+- UX Evaluation
+- Accessibility
+- Interaction Design
+
+About section:
+Heading:
+Building software with people in mind.
+
+Text:
+My work combines technical implementation with a human-centered approach. I enjoy creating web applications, studying how users interact with interfaces, and improving digital experiences through clearer structure, better feedback, and accessible design choices.
+
+Info cards:
+- Degree Program: [Your Degree Program]
+- Expected Graduation: [Graduation Year]
+- Focus Areas: Web Development, UX Evaluation, Human-Centered Design
+- Location: [Your Location or leave placeholder]
+
+Professional Materials section:
+Rename it to:
+Profile & Professional Materials
+
+Cards:
+1. Resume / CV
+Description:
+A concise overview of my education, technical skills, projects, and professional experience.
+Button: View Resume
+
+2. LinkedIn
+Description:
+My professional profile with academic background, experience, and selected work.
+Button: Visit LinkedIn
+
+3. About Me
+Description:
+A quick introduction to my background, interests, degree program, and design/development focus.
+Button: Read More
+
+Work / Projects section:
+Create a section called:
+Selected Work
+
+Add at least 3 cards:
+1. Safeway Grocery Experience Redesign
+Description:
+A UX case study exploring how grocery shopping can shift from category-based browsing to meal-based planning.
+Tags:
+UX Evaluation, Conceptual Model, Mental Model, Figma
+Button:
+Open Case Study
+
+2. Web Development Projects
+Description:
+Selected projects focused on building usable, responsive, and maintainable web applications.
+Tags:
+HTML, CSS, JavaScript, React/Next.js
+
+3. Interaction Design Analysis
+Description:
+Course-based evaluations of real interfaces using visibility, feedback, constraints, consistency, affordances, and mapping.
+Tags:
+HCI, Usability, Accessibility
+
+Featured Case Study preview:
+This should connect to case-study-safeway.html.
+
+Title:
+Safeway.com UX Case Study
+
+Subtitle:
+Redesigning grocery shopping around meal planning instead of only product categories.
+
+Body:
+This case study evaluates the current Safeway grocery experience and proposes a more human-centered model. The redesign focuses on how users naturally plan meals, organize ingredients, and build grocery lists.
+
+Button:
+Read Full Case Study
+
+Skills section:
+Rename:
+Skills & Methods
+
+Group skills into categories instead of one long chip list.
+
+Category 1: Development
+- HTML
+- CSS
+- JavaScript
+- React / Next.js
+- Responsive Design
+
+Category 2: UX & HCI
+- Heuristic Evaluation
+- Interaction Design
+- Conceptual Modeling
+- Mental Models
+- Gulf of Execution Analysis
+
+Category 3: Design & Research
+- Wireframing
+- Figma
+- Accessibility Review
+- Information Architecture
+- Visual Design
+
+Contact section:
+Heading:
+Let’s connect.
+
+Text:
+I’m open to discussing projects, collaborations, internships, and design or development opportunities.
+
+Cards:
+- Email: [Your Email]
+- LinkedIn: [Your LinkedIn]
+- GitHub / Portfolio: [Your Link]
+
+Footer:
+[Your Name] — Software Developer & UX-Focused Portfolio — 2026
+
+
+Case study page update:
+Keep the Safeway case study page, but make it match the new warm editorial theme.
+
+Page title:
+Safeway Grocery Experience Redesign
+
+Subtitle:
+A human-centered case study on conceptual models, mental models, interface metaphors, and the gulf of execution.
+
+Tone:
+The case study can mention HCC 629, but it should not make the whole website feel like only a course assignment.
+
+Metadata cards:
+- Role: UX Evaluator / Interaction Designer
+- Project Type: Academic UX Case Study
+- Website Studied: Safeway.com
+- Focus: Grocery Shopping, Meal Planning, Interaction Design
+- Tools: Figma, Interface Analysis, Wireframing
+- Course: HCC 629: Fundamentals of Human-Centered Computing
+
+Project overview:
+Safeway’s current website mainly organizes shopping around grocery categories such as produce, meat, bakery, and deals. This case study explores an alternative model where users begin with what they want to cook, then move toward recipes, ingredients, and cart building.
+
+Problem statement:
+How might Safeway support users who think in terms of meals and weekly planning, rather than asking them to begin only with product categories?
+
+Case study sections:
+1. Context
+2. Current Experience
+3. User Mental Model
+4. Redesign Direction
+5. Interface Metaphors
+6. Design Principles Applied
+7. Gulf of Execution
+8. Outcome
+9. Reflection
+
+Keep these principle cards:
+- Visibility
+- Constraints
+- Feedback
+- Consistency
+- Signifiers / Affordances
+- Mapping
+- Accessibility / Universal Design
+
+Use before/after image placeholders:
+- assets/safeway-current-homepage.png
+- assets/safeway-meal-planner.png
+- assets/recipe-card-board.png
+- assets/virtual-fridge.png
+- assets/grocery-list-notepad.png
+- assets/coupon-current.png
+- assets/coupon-redesign.png
+
+Add comments in the HTML wherever I need to replace:
+- name
+- degree program
+- graduation year
+- resume link
+- LinkedIn link
+- email
+- headshot
+- project images
+- Figma link
+
+Final requirement:
+The final design should feel meaningfully different from the previous dark navy/cyan portfolio. It should feel warm, professional, personal, and suitable as my real portfolio while still satisfying the Human-Centered Computing assignment requirements.
