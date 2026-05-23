@@ -21,8 +21,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a class="nav-link active" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#work">Work</a></li>
-        <li><a class="nav-link" href="#case-study">Case Study</a></li>
+        <li><a class="nav-link" href="#work">Case Studies</a></li>
         <li><a class="nav-link" href="#skills">Skills</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
@@ -45,8 +44,10 @@
           </p>
           <div class="action-row">
             <a class="button primary-button" href="#work">View My Work</a>
-            <a class="button secondary-button" href="case-study-safeway.html">View Safeway Case Study</a>
-            <a class="button text-button" href="Resume_Raabit_Hassan.pdf">Resume</a>
+            <!-- Replace assets/resume.pdf if you upload a newer resume file. -->
+            <a class="button secondary-button" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <!-- Replace this placeholder with your final LinkedIn profile URL if it changes. -->
+            <a class="button secondary-button" href="https://www.linkedin.com/in/raabithassan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
 
@@ -77,15 +78,17 @@
         </div>
         <div class="reveal">
           <p class="lead">
-            My work combines technical implementation with a human-centered approach. I have 8+ years of experience delivering web and mobile-integrated systems using PHP, Laravel, JavaScript, Python, and modern development practices. I enjoy building reliable backend architecture, leading agile product work, and improving digital experiences through clearer structure, better feedback, and accessible design choices.
+            My work combines software development with human-centered thinking. I build practical digital products while also studying how people interact with interfaces, where confusion happens, and how design decisions can make systems easier to use.
           </p>
           <div class="info-grid">
             <article class="mini-card">
               <span>Degree Program</span>
+              <!-- Update this degree program if your official program name changes. -->
               <strong>MPS in Software Engineering</strong>
             </article>
             <article class="mini-card">
               <span>Expected Graduation</span>
+              <!-- Update this graduation date if your expected timeline changes. -->
               <strong>December, 2026</strong>
             </article>
             <article class="mini-card">
@@ -108,20 +111,22 @@
           <h2 id="materials-title">Profile &amp; Professional Materials</h2>
         </div>
         <div class="card-grid three-col">
-          <article class="card reveal">
-            <h3>Resume / CV</h3>
-            <p>A concise overview of my education, technical skills, projects, and professional experience.</p>
-            <a class="inline-link" href="Resume_Raabit_Hassan.pdf">View Resume</a>
+          <article class="card material-card reveal">
+            <h3>About Me</h3>
+            <p>A brief overview of my background, degree program, expected graduation, and interest in software development, usability, accessibility, and human-centered design.</p>
+            <a class="inline-link" href="#about">Read About Me</a>
           </article>
-          <article class="card reveal">
+          <article class="card material-card reveal">
+            <h3>CV / Resume</h3>
+            <p>A concise summary of my education, technical skills, projects, and professional experience.</p>
+            <!-- Replace assets/resume.pdf if you upload a newer resume file. -->
+            <a class="inline-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+          </article>
+          <article class="card material-card reveal">
             <h3>LinkedIn</h3>
             <p>My professional profile with academic background, experience, and selected work.</p>
-            <a class="inline-link" href="https://www.linkedin.com/in/raabithassan/" target="_blank" rel="noreferrer">Visit LinkedIn</a>
-          </article>
-          <article class="card reveal">
-            <h3>About Me</h3>
-            <p>A quick introduction to my background in software engineering, backend systems, project leadership, and UX-focused development.</p>
-            <a class="inline-link" href="#about">Read More</a>
+            <!-- Replace this placeholder with your final LinkedIn profile URL if it changes. -->
+            <a class="inline-link" href="https://www.linkedin.com/in/raabithassan/" target="_blank" rel="noopener noreferrer">Visit LinkedIn</a>
           </article>
         </div>
       </div>
@@ -130,47 +135,30 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-label">Work</p>
-          <h2 id="work-title">Selected Work</h2>
+          <p class="section-label">Case Studies</p>
+          <h2 id="work-title">Selected Case Studies</h2>
+          <p>These case studies show how I applied human-centered computing concepts to evaluate existing interfaces, identify usability problems, design alternatives, test improvements, and reflect on the results.</p>
         </div>
-        <div class="card-grid three-col">
+        <div class="card-grid two-col">
           <article class="project-card reveal">
             <h3>Safeway Grocery Experience Redesign</h3>
-            <p>A UX case study exploring how grocery shopping can shift from category-based browsing to meal-based planning.</p>
-            <div class="tag-row"><span>UX Evaluation</span><span>Conceptual Model</span><span>Mental Model</span><span>Figma</span></div>
-            <a class="inline-link" href="case-study-safeway.html">Open Case Study</a>
+            <p class="section-label">Interaction Design Rules Case Study</p>
+            <p>A grocery shopping redesign focused on conceptual models, mental models, interface metaphors, design principles, and the gulf of execution.</p>
+            <div class="tag-row"><span>Interaction Design</span><span>Conceptual Models</span><span>Mental Models</span><span>Interface Metaphors</span><span>Gulf of Execution</span><span>Accessibility</span></div>
+            <a class="inline-link" href="case-study-safeway.html">Open Safeway Case Study</a>
           </article>
           <article class="project-card reveal">
-            <h3>RD Demos Management</h3>
-            <p>A Laravel, VueJS, and MySQL project where I led the conversion from a Laravel front-back system to a VueJS-Laravel single page application and developed backend API infrastructure.</p>
-            <div class="tag-row"><span>Laravel</span><span>VueJS</span><span>MySQL</span><span>API Development</span></div>
-          </article>
-          <article class="project-card reveal">
-            <h3>Jourly</h3>
-            <p>A Flutter, Laravel, Firebase, and MySQL product where I managed the project as lead and developed backend API infrastructure and an admin panel.</p>
-            <div class="tag-row"><span>Flutter</span><span>Laravel</span><span>Firebase</span><span>MySQL</span></div>
+            <h3>NotebookLM Redesign</h3>
+            <p class="section-label">Process of Interaction Design Case Study</p>
+            <p>A UX redesign focused on hidden affordance, grid structure, source-specific summarization, user testing, and iteration.</p>
+            <div class="tag-row"><span>UX Evaluation</span><span>Grid</span><span>Affordance</span><span>Information Design</span><span>User Testing</span><span>Figma</span></div>
+            <a class="inline-link" href="case-study-notebooklm.html">Open NotebookLM Case Study</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section soft-section" id="case-study" aria-labelledby="case-preview-title">
-      <div class="container">
-        <article class="feature-panel reveal">
-          <div>
-            <p class="section-label">Featured UX Case Study</p>
-            <h2 id="case-preview-title">Safeway.com UX Case Study</h2>
-            <p class="lead">Redesigning grocery shopping around meal planning instead of only product categories.</p>
-            <p>
-              This case study evaluates the current Safeway grocery experience and proposes a more human-centered model. The redesign focuses on how users naturally plan meals, organize ingredients, and build grocery lists.
-            </p>
-          </div>
-          <a class="button primary-button" href="case-study-safeway.html">Read Full Case Study</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
+    <section class="section soft-section" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-label">Skills</p>
@@ -181,30 +169,34 @@
             <h3>Development</h3>
             <ul>
               <li>PHP</li>
-              <li>Laravel</li>
+              <li>HTML</li>
+              <li>CSS</li>
               <li>JavaScript</li>
-              <li>Django</li>
-              <li>React</li>
+              <li>Responsive Design</li>
+              <li>Web Development</li>
             </ul>
           </article>
           <article class="skill-card reveal">
             <h3>UX &amp; HCI</h3>
             <ul>
-              <li>Backend Development</li>
-              <li>REST API Development</li>
-              <li>Mobile-Integrated Web Apps</li>
-              <li>Agile Product Development</li>
-              <li>Full Life Cycle Product Management</li>
+              <li>Heuristic Evaluation</li>
+              <li>Interaction Design</li>
+              <li>Conceptual Models</li>
+              <li>Mental Models</li>
+              <li>Gulf of Execution</li>
+              <li>Hidden Affordance</li>
+              <li>Information Design</li>
             </ul>
           </article>
           <article class="skill-card reveal">
             <h3>Design &amp; Research</h3>
             <ul>
-              <li>Team Building &amp; Leadership</li>
-              <li>Budget Management &amp; Forecasting</li>
-              <li>Marketing / Market Analysis</li>
-              <li>Client Communication</li>
-              <li>UX Evaluation</li>
+              <li>Wireframing</li>
+              <li>Figma</li>
+              <li>User Testing</li>
+              <li>Accessibility Review</li>
+              <li>Visual Hierarchy</li>
+              <li>Reflection</li>
             </ul>
           </article>
         </div>
@@ -225,11 +217,12 @@
           </article>
           <article class="contact-card reveal">
             <span>LinkedIn</span>
-            <a href="https://www.linkedin.com/in/raabithassan/" target="_blank" rel="noreferrer">linkedin.com/in/raabithassan</a>
+            <!-- Replace this placeholder with your final LinkedIn profile URL if it changes. -->
+            <a href="https://www.linkedin.com/in/raabithassan/" target="_blank" rel="noopener noreferrer">linkedin.com/in/raabithassan</a>
           </article>
           <article class="contact-card reveal">
             <span>GitHub / Portfolio</span>
-            <a href="https://github.com/raabhass" target="_blank" rel="noreferrer">github.com/raabhass</a>
+            <a href="https://github.com/raabhass" target="_blank" rel="noopener noreferrer">github.com/raabhass</a>
           </article>
         </div>
       </div>
